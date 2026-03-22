@@ -1,0 +1,108 @@
+import type { Cliente, Notificacion, Configuracion } from '../types'
+
+export const mockClientes: Cliente[] = [
+  {
+    id: 1,
+    nombres: 'Carlos Alberto',
+    apellidos: 'Rodríguez Huanca',
+    celular: '987654321',
+    fechaInscripcion: '2026-01-10',
+    duracionMeses: 3,
+    fechaVencimiento: '2026-04-10',
+    estado: 'activo',
+  },
+  {
+    id: 2,
+    nombres: 'María Elena',
+    apellidos: 'López Quispe',
+    celular: '912345678',
+    fechaInscripcion: '2026-02-15',
+    duracionMeses: 1,
+    fechaVencimiento: '2026-03-18',
+    estado: 'por_vencer',
+  },
+  {
+    id: 3,
+    nombres: 'José Luis',
+    apellidos: 'Martínez Torres',
+    celular: '955443322',
+    fechaInscripcion: '2025-12-01',
+    duracionMeses: 2,
+    fechaVencimiento: '2026-02-28',
+    estado: 'vencido',
+  },
+  {
+    id: 4,
+    nombres: 'Ana Sofía',
+    apellidos: 'García Pérez',
+    celular: '966778899',
+    fechaInscripcion: '2026-01-20',
+    duracionMeses: 6,
+    fechaVencimiento: '2026-07-20',
+    estado: 'activo',
+  },
+  {
+    id: 5,
+    nombres: 'Diego Armando',
+    apellidos: 'Flores Ccama',
+    celular: '977001122',
+    fechaInscripcion: '2026-02-01',
+    duracionMeses: 1,
+    fechaVencimiento: '2026-03-19',
+    estado: 'por_vencer',
+  },
+  {
+    id: 6,
+    nombres: 'Lucía Fernanda',
+    apellidos: 'Vargas Condori',
+    celular: '933445566',
+    fechaInscripcion: '2026-01-05',
+    duracionMeses: 2,
+    fechaVencimiento: '2026-03-05',
+    estado: 'vencido',
+  },
+]
+
+export const mockNotificaciones: Notificacion[] = [
+  {
+    id: 1,
+    clienteId: 2,
+    clienteNombre: 'María Elena López',
+    mensaje: 'Su mensualidad vence en 2 días (18/03/2026)',
+    tipo: 'vencimiento_proximo',
+    fecha: '2026-03-16',
+    leida: false,
+  },
+  {
+    id: 2,
+    clienteId: 5,
+    clienteNombre: 'Diego Armando Flores',
+    mensaje: 'Su mensualidad vence en 3 días (19/03/2026)',
+    tipo: 'vencimiento_proximo',
+    fecha: '2026-03-16',
+    leida: false,
+  },
+  {
+    id: 3,
+    clienteId: 3,
+    clienteNombre: 'José Luis Martínez',
+    mensaje: 'Mensualidad vencida desde el 28/02/2026',
+    tipo: 'vencido',
+    fecha: '2026-03-01',
+    leida: true,
+  },
+  {
+    id: 4,
+    clienteId: 6,
+    clienteNombre: 'Lucía Fernanda Vargas',
+    mensaje: 'Mensualidad vencida desde el 05/03/2026',
+    tipo: 'vencido',
+    fecha: '2026-03-06',
+    leida: false,
+  },
+]
+
+export const mockConfiguracion: Configuracion = {
+  nombreGimnasio: 'GymPro',
+  diasAvisoPrevio: 5,
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap');
+
+:root {
+  /* Brand */
+  --color-primary:        #E65C00;
+  --color-primary-dark:   #BF4D00;
+  --color-primary-light:  #FF8C42;
+  --color-primary-ghost:  rgba(230, 92, 0, 0.09);
+
+  /* Backgrounds — light theme */
+  --color-bg:             #f4f5f7;
+  --color-bg-card:        #ffffff;
+  --color-bg-elevated:    #f8f9fb;
+  --color-bg-hover:       #f0f1f4;
+
+  /* Text */
+  --color-text:           #1a1d23;
+  --color-text-muted:     #6b7280;
+  --color-text-faint:     #9ca3af;
+
+  /* Borders */
+  --color-border:         rgba(0,0,0,0.08);
+  --color-border-strong:  rgba(0,0,0,0.15);
+
+  /* Semantic */
+  --color-success:        #16a34a;
+  --color-success-bg:     rgba(22,163,74,0.10);
+  --color-warning:        #d97706;
+  --color-warning-bg:     rgba(217,119,6,0.10);
+  --color-danger:         #dc2626;
+  --color-danger-bg:      rgba(220,38,38,0.10);
+  --color-info:           #2563eb;
+  --color-info-bg:        rgba(37,99,235,0.10);
+
+  /* Layout */
+  --sidebar-width:        260px;
+  --navbar-height:        64px;
+  --radius-sm:            6px;
+  --radius-md:            10px;
+  --radius-lg:            16px;
+  --radius-xl:            24px;
+
+  /* Shadows */
+  --shadow-sm:            0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:            0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:            0 8px 32px rgba(0,0,0,0.14);
+  --shadow-orange:        0 4px 20px rgba(230,92,0,0.25);
+
+  /* Font */
+  --font-main:            'Barlow', sans-serif;
+  --font-display:         'Barlow Condensed', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-main);
+}
+
+input, select, textarea {
+  font-family: var(--font-main);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
